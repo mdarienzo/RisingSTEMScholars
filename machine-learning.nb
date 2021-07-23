@@ -1,0 +1,101 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3007,         91]
+NotebookOptionsPosition[      2470,         75]
+NotebookOutlinePosition[      2869,         91]
+CellTagsIndexPosition[      2826,         88]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"lilyfresh", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\</home/pi/Desktop/RisingSTEMScholars/LilyLeafData/lily-fresh.png\>\"",
+     "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lilyfresh2", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\</home/pi/Desktop/RisingSTEMScholars/LilyLeafData/lily-fresh2.png\>\"\
+", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lilydry", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\</home/pi/Desktop/RisingSTEMScholars/LilyLeafData/lily-dry.png\>\"", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lilydry2", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\</home/pi/Desktop/RisingSTEMScholars/LilyLeafData/lily-dry2.png\>\"", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lilyunknown", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\</home/pi/Desktop/RisingSTEMScholars/LilyLeafData/lily-unknown.png\>\"\
+", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.835973782856969*^9, 3.8359739270997677`*^9}, 
+   3.835974024530367*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"5b1522b0-0edc-4315-b3ca-b3fcc72e4918"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"trainingset", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"lilyfresh", "\[Rule]", "\"\<fresh\>\""}], ",", 
+     RowBox[{"lilyfresh2", "\[Rule]", "\"\<fresh\>\""}], ",", 
+     RowBox[{"lilydry", "\[Rule]", "\"\<dry\>\""}], ",", 
+     RowBox[{"lilydry2", "\[Rule]", "\"\<dry\>\""}]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.835973963215637*^9, 3.83597405209431*^9}, 
+   3.8359740905448713`*^9},
+ CellLabel->"In[7]:=",ExpressionUUID->"1a465b9a-fb63-4dbf-8369-124545c43079"],
+
+Cell[BoxData[
+ RowBox[{"Classify", "[", 
+  RowBox[{"trainingset", ",", "lilyunknown"}], "]"}]], "Input",
+ CellChangeTimes->{{3.835974061577056*^9, 3.8359740774820633`*^9}},
+ CellLabel->"",ExpressionUUID->"eb2644f8-d09f-4afe-8ccd-4d49914ff18e"]
+},
+WindowSize->{606., 424.5},
+WindowMargins->{{Automatic, -183}, {67.5, Automatic}},
+FrontEndVersion->"12.1 for Linux ARM (32-bit) (August 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5a319217-cb0d-4f3c-a11b-1a35cc830c1c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1137, 33, 422, "Input",ExpressionUUID->"5b1522b0-0edc-4315-b3ca-b3fcc72e4918"],
+Cell[1698, 55, 522, 12, 51, "Input",ExpressionUUID->"1a465b9a-fb63-4dbf-8369-124545c43079"],
+Cell[2223, 69, 243, 4, 29, "Input",ExpressionUUID->"eb2644f8-d09f-4afe-8ccd-4d49914ff18e"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
